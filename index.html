@@ -142,7 +142,7 @@
         .hero {
             min-height: 100vh;
             min-height: 100dvh;
-            background: var(--black);
+            background: linear-gradient(rgba(10,10,10,0.88), rgba(10,10,10,0.92)), url('https://images.unsplash.com/photo-1585747860019-024e760d5c40?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
             display: -webkit-flex; display: flex;
             -webkit-align-items: center; align-items: center;
             -webkit-justify-content: center; justify-content: center;
@@ -496,17 +496,21 @@
         .gallery-item {
             aspect-ratio: 1;
             background: linear-gradient(135deg, var(--dark), #2a2a2a);
+            background-size: cover;
+            background-position: center;
             display: -webkit-flex; display: flex;
-            -webkit-align-items: center; align-items: center;
+            -webkit-align-items: flex-end; align-items: flex-end;
             -webkit-justify-content: center; justify-content: center;
             font-family: 'Oswald', sans-serif;
-            color: var(--gray); font-size: 0.9rem; letter-spacing: 1px;
+            color: var(--white); font-size: 0.9rem; letter-spacing: 1px;
             text-transform: uppercase;
-            -webkit-transition: opacity 0.3s;
-            transition: opacity 0.3s;
+            -webkit-transition: transform 0.4s var(--ease-out-expo), opacity 0.3s;
+            transition: transform 0.4s var(--ease-out-expo), opacity 0.3s;
             border-radius: 0;
+            padding-bottom: 0.75rem;
+            text-shadow: 0 1px 6px rgba(0,0,0,0.8);
         }
-        .gallery-item:hover { opacity: 0.8; }
+        .gallery-item:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
 
         /* ========== Hours ========== */
         .hours { background: var(--dark); }
@@ -713,12 +717,12 @@
             <p>Fresh cuts from the shop</p>
         </div>
         <div class="gallery-grid">
-            <div class="gallery-item reveal reveal-delay-1">Fade</div>
-            <div class="gallery-item reveal reveal-delay-2">Taper</div>
-            <div class="gallery-item reveal reveal-delay-3">Beard</div>
-            <div class="gallery-item reveal reveal-delay-4">Classic</div>
-            <div class="gallery-item reveal reveal-delay-5">Design</div>
-            <div class="gallery-item reveal reveal-delay-1">Lineup</div>
+            <div class="gallery-item reveal reveal-delay-1" style="background-image: linear-gradient(to top, rgba(10,10,10,0.7), transparent 50%), url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80');">Fade</div>
+            <div class="gallery-item reveal reveal-delay-2" style="background-image: linear-gradient(to top, rgba(10,10,10,0.7), transparent 50%), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80');">Taper</div>
+            <div class="gallery-item reveal reveal-delay-3" style="background-image: linear-gradient(to top, rgba(10,10,10,0.7), transparent 50%), url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80');">Beard</div>
+            <div class="gallery-item reveal reveal-delay-4" style="background-image: linear-gradient(to top, rgba(10,10,10,0.7), transparent 50%), url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80');">Classic</div>
+            <div class="gallery-item reveal reveal-delay-5" style="background-image: linear-gradient(to top, rgba(10,10,10,0.7), transparent 50%), url('https://images.unsplash.com/photo-1596728325445-3e4e0a6e1b3b?auto=format&fit=crop&w=600&q=80');">Design</div>
+            <div class="gallery-item reveal reveal-delay-1" style="background-image: linear-gradient(to top, rgba(10,10,10,0.7), transparent 50%), url('https://images.unsplash.com/photo-1585747860019-024e760d5c40?auto=format&fit=crop&w=600&q=80');">Lineup</div>
         </div>
     </section>
 
