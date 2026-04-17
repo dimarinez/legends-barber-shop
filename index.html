@@ -353,10 +353,15 @@
             text-transform: uppercase;
             margin-right: 3rem;
         }
-        .marquee-inner span::before {
-            content: '\2726';
+        .marquee-inner span .marquee-sep {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
             margin-right: 3rem;
             opacity: 0.5;
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
         }
         @-webkit-keyframes marqueeScroll {
             0% { -webkit-transform: translateX(0); transform: translateX(0); }
@@ -641,8 +646,8 @@
 
     <div class="marquee">
         <div class="marquee-inner">
-            <span>Fades</span><span>Lineups</span><span>Beard Trims</span><span>Hot Towel Shaves</span><span>Hair Art</span><span>Classic Cuts</span><span>Kids Cuts</span><span>Edge Ups</span>
-            <span>Fades</span><span>Lineups</span><span>Beard Trims</span><span>Hot Towel Shaves</span><span>Hair Art</span><span>Classic Cuts</span><span>Kids Cuts</span><span>Edge Ups</span>
+            <span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Fades</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Lineups</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Beard Trims</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Hot Towel Shaves</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Hair Art</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Classic Cuts</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Kids Cuts</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Edge Ups</span>
+            <span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Fades</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Lineups</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Beard Trims</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Hot Towel Shaves</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Hair Art</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Classic Cuts</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Kids Cuts</span><span><svg class="marquee-sep" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>Edge Ups</span>
         </div>
     </div>
 
